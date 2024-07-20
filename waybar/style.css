@@ -1,0 +1,29 @@
+window#waybar {
+	border-radius: 10px;
+	border: 2px solid transparent;
+	background: linear-gradient(#051419, #051419 0) padding-box,
+	linear-gradient(135deg, #33ccff, #00ff99) border-box;
+}
+
+#workspaces button {
+	all: unset;
+	color: #33ccff;
+	font-size: 20;
+	padding: 0 8px 0 8px;
+	transition: color 0.2s;
+}
+
+#workspaces button:hover {
+	transition: color 0.2s;
+	color: #00ff99;
+	font-size: 27;
+	padding: 0 6px 0 6px;
+}
+
+/*#workspaces button:hover ~ button.active {*/
+/*	color: #33ccff;*/
+/*}*/
+
+#workspaces button.active {
+	color: #00ff99;
+}

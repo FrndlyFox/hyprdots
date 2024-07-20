@@ -1,0 +1,10 @@
+font=ComicShannsMono Nerd Font Mono 12
+on-button-middle=dismiss
+
+background-color=#051419FF
+border-radius=10
+border-color=#00ff99FF
+
+default-timeout=2000
+anchor=bottom-center
+outer-margin=7
