@@ -27,3 +27,23 @@ window#waybar {
 #workspaces button.active {
 	color: #00ff99;
 }
+
+#clock {
+	font-family: ComicShannsMono Nerd Font Mono;
+	font-weight: bold;
+	font-size: 18;
+	color: #00ff99;
+	margin: 0 25 0 25;
+
+}
+
+#cpu, #memory, #pulseaudio {
+	font-family: ComicShannsMono Nerd Font Propo;
+	font-weight: bold;
+	margin: 0 0 0 16;
+	color: #33ccff;
+}
+
+#tray {
+	margin: 0 0 0 10;
+}
