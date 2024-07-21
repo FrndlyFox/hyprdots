@@ -1,3 +1,8 @@
+* {
+	font-family: ComicShannsMono Nerd Font Propo;
+	font-weight: bold;
+}
+
 window#waybar {
 	border-radius: 10px;
 	border: 2px solid transparent;
@@ -9,41 +14,51 @@ window#waybar {
 	all: unset;
 	color: #33ccff;
 	font-size: 20;
-	padding: 0 8px 0 8px;
+	padding: 0 9 0 9;
 	transition: color 0.2s;
 }
 
 #workspaces button:hover {
 	transition: color 0.2s;
 	color: #00ff99;
-	font-size: 27;
-	padding: 0 6px 0 6px;
+	/*font-size: 27;*/
+	/*padding: 0 7 0 7;*/
 }
-
-/*#workspaces button:hover ~ button.active {*/
-/*	color: #33ccff;*/
-/*}*/
 
 #workspaces button.active {
 	color: #00ff99;
 }
 
 #clock {
-	font-family: ComicShannsMono Nerd Font Mono;
-	font-weight: bold;
 	font-size: 18;
 	color: #00ff99;
-	margin: 0 25 0 25;
+	margin: 0 27 0 25;
 
 }
 
 #cpu, #memory, #pulseaudio {
-	font-family: ComicShannsMono Nerd Font Propo;
-	font-weight: bold;
-	margin: 0 0 0 16;
+	margin: 0 8 0 8;
 	color: #33ccff;
+} #pulseaudio { margin-right: 0 }
+
+#custom-playericon {
+	margin: 0 10 0 12;
+	color: #33ccff;
+	transition: color 0.2s;
+} #custom-playericon.Playing { color: #00ff99 }
+
+#custom-playertitle {
+	color: #33ccff;
+	margin: 0;
 }
 
 #tray {
-	margin: 0 0 0 10;
+	margin: 0 10 0 0;
+}
+#tray menu {
+	color: #ffffff;
+	border: 2;
+	border: 2px solid transparent;
+	background: linear-gradient(#051419, #051419 0) padding-box,
+	linear-gradient(135deg, #33ccff, #00ff99) border-box;
 }

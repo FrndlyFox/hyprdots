@@ -18,6 +18,8 @@ map({ "n", "v" }, "<C-w>l", "<C-w>L", { noremap = true })
 map({ "n", "v" }, "<C-w>i", "<C-w>K", { noremap = true })
 map({ "n", "v" }, "<C-w>k", "<C-w>J", { noremap = true })
 
+map({ "n", "i", "v" }, "<C-=>", "<C-w>+")
+map({ "n", "i", "v" }, "<C-->", "<C-w>-")
 -- Plugins --
 map("n", "<Leader>l", require("lazy.view").show)
 map("n", "<Leader>e", function() require("nvim-tree.api").tree.toggle{ find_file = false, update_root = false } end)
