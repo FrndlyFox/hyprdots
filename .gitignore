@@ -6,9 +6,11 @@
 !waybar/
 !mako/
 !kitty/
+!rofi/
 
 !hypr/**
 !nvim/**
 !waybar/**
 !mako/**
 !kitty/**
+!rofi/**
