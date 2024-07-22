@@ -1,5 +1,8 @@
 *
 !.gitignore
+!README.md
+!Screenshots/
+!Screenshots/**
 
 !hypr/
 !nvim/
