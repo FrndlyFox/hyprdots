@@ -10,6 +10,13 @@ window#waybar {
 	linear-gradient(135deg, #33ccff, #00ff99) border-box;
 }
 
+tooltip {
+	border-radius: 5px;
+	border: 2px solid transparent;
+	background: linear-gradient(#051419, #051419 0) padding-box,
+	linear-gradient(135deg, #33ccff, #00ff99) border-box;
+}
+
 #workspaces button {
 	all: unset;
 	color: #33ccff;
@@ -57,7 +64,6 @@ window#waybar {
 }
 #tray menu {
 	color: #ffffff;
-	border: 2;
 	border: 2px solid transparent;
 	background: linear-gradient(#051419, #051419 0) padding-box,
 	linear-gradient(135deg, #33ccff, #00ff99) border-box;
