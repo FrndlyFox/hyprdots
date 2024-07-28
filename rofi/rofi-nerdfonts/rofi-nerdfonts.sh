@@ -17,7 +17,7 @@ readarray chars < "${chars_csv}"
 char_entry=$(
     for char in "${chars[@]}";{
         echo ${char/,/ }
-    }|rofi -dmenu -window-title Search
+    }|rofi -dmenu -window-title Search -no-show-icons
 )
 
 # If user cancelled rofi, exit
