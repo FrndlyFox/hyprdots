@@ -6,7 +6,7 @@
 	//"modules-left": ["custom/playerprev","custom/playerplay","custom/playernext","custom/playername"],
 	"modules-left": ["custom/playericon","custom/playertitle"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["tray","cpu","memory","pulseaudio","clock"],
+	"modules-right": ["tray","cpu","memory","pulseaudio","hyprland/language","clock"],
 
 	"pulseaudio": {
 		"tooltip": false,
@@ -46,11 +46,11 @@
 	"custom/playericon": {
 		"format": "{icon}",
 		"tooltip": false,
-		"on-click": "playerctl play-pause",
-		"on-scroll-up": "playerctl previous",
-		"on-scroll-down": "playerctl next",
+		"on-click": "playerctl -p spotify play-pause",
+		"on-scroll-up": "playerctl -p spotify previous",
+		"on-scroll-down": "playerctl -p spotify next",
 		"return-type": "json",
-		"exec": "playerctl -a metadata --format '{\"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+		"exec": "playerctl -p spotify metadata --format '{\"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
 		"format-icons": {
 			"Playing": "",
 			"Paused": "",
@@ -61,10 +61,15 @@
 		"format": "{}",
 		"tooltip": false,
 		"max-length": 64,
-		"exec": "playerctl -a metadata --format '{{markup_escape(artist)}} - {{markup_escape(title)}}' -F"
+		"exec": "playerctl -p spotify metadata --format '{{markup_escape(artist)}} - {{markup_escape(title)}}' -F"
 	},
 	"tray": {
 		"reverse-direction": true,
 		"spacing": 10
+	},
+	"hyprland/language": {
+		"format-en": "EN",
+		"format-ru": "RU",
+		"on-click": "hyprctl switchxkblayout by-tech-gaming-keyboard next"
 	}
 }

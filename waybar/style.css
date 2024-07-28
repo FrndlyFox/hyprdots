@@ -28,8 +28,6 @@ tooltip {
 #workspaces button:hover {
 	transition: color 0.2s;
 	color: #00ff99;
-	/*font-size: 27;*/
-	/*padding: 0 7 0 7;*/
 }
 
 #workspaces button.active {
@@ -40,26 +38,24 @@ tooltip {
 	font-size: 18;
 	color: #00ff99;
 	margin: 0 27 0 25;
-
 }
 
 #cpu, #memory, #pulseaudio {
-	margin: 0 8 0 8;
 	color: #33ccff;
-} #pulseaudio { margin-right: 0 }
+	margin: 0 8 0 8;
+}
 
 #custom-playericon {
-	margin: 0 10 0 12;
 	color: #33ccff;
+	margin: 0 10 0 12;
 	transition: color 0.2s;
 } #custom-playericon.Playing { color: #00ff99 }
-
 #custom-playertitle {
 	color: #33ccff;
-	margin: 0;
 }
 
 #tray {
+	color: #33ccff;
 	margin: 0 10 0 0;
 }
 #tray menu {
@@ -67,4 +63,9 @@ tooltip {
 	border: 2px solid transparent;
 	background: linear-gradient(#051419, #051419 0) padding-box,
 	linear-gradient(135deg, #33ccff, #00ff99) border-box;
+}
+
+#language {
+	color: #33ccff;
+	margin-left: 8;
 }
