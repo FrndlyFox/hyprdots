@@ -1,0 +1,6 @@
+# yazi.toml
+[manager]
+sort_by = "natural"
+sort_translit = true
+linemode = "size"
+show_hidden = true
