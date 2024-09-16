@@ -5,7 +5,7 @@ g.mapleader = " "
 -- Appearance --
 set.nu = true
 set.rnu = true
--- set.termguicolors = false
+set.termguicolors = false
 -- vim.cmd("language en_US")
 set.splitright = true
 set.splitbelow = true
